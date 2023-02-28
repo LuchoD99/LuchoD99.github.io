@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <title>Luciano Diaz</title>
 </head>
 <body>
     <header>
-        Luciano Diaz Ocampo
+        <h1>Luciano Ezequiel Diaz Ocampo</h1>
     </header>
-    <p>Desarrollador Full Stack</p>
-    <div>
-        <img src="./Fondos/face.jpg" alt="img not found">
+    <p class="subtitulo">Desarrollador Full Stack</p>
+    <div class="datos">
+        <img id="img-face" src="./Fondos/face.jpg" alt="img not found">
         <h2>Datos Personales</h2>
         <ul>
             <li>Nacionalidad: Argentina</li>
@@ -41,6 +46,10 @@
                 <li>Redux.js</li>
                 <li>Redux toolkit</li>
             </ul>
+            <br>
+            <br>
+            <br>
+            <hr>
             <h2>
                 <i class="fa-solid fa-palette">Extras</i>
             </h2>
@@ -57,6 +66,7 @@
         <li>Trabajo en Equipo</li>
         <li>Creatividad</li>
     </ul>
+    <p class="separador"></p>
     <h2><i class="fa-solid fa-graduation-cap"></i> Educación</h2> 
     <ul>
         <li>Ticmas. Introduccion Desarrollo Front End. 2023</li>
@@ -95,4 +105,13 @@
     </div>
 
 </body>
+<footer>
+    <button id="button" onclick="MostrarContacto()">Contacto</button>
+    <p id="contacto"></p>
+    <script>
+        function MostrarContacto(){
+            document.getElementById("contacto").innerHTML = "+54 9 1164771109 // luciano.diazocampo@gmail.com // Github:https://github.com/LuchoD99 // Linkdin:luciano-diaz";
+         }
+    </script>
+</footer>
 </html>
